@@ -12,7 +12,7 @@
         <form>
             <input type="text" id="Name" placeholder="Expense Name">
             <input type="number" id="Amount" placeholder="Amount">
-            <button type="button" id="addExpnse">Add</button>
+            <button type="button" id="addExpense">Add</button>
         </form>
         <table>
             <thead>
@@ -22,8 +22,13 @@
                     <th>Action</th>
                 </tr>
             </thead>
+            <tbody id="expenseList">
+
+            </tbody>
         </table>
-        <div id="totalExpense">Total Expense: $0</div>
+        <div id="totalExpense">Total Expense: $0.00</div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="jquery/expense.js"></script>
 </body>
 </html>

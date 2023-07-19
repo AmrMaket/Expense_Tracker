@@ -25,3 +25,8 @@ th , td{
     text-align: left;
     padding: 8px;
 }
+#totalExpense {
+    text-align: right;
+    font-weight: bold;
+    margin-top: 10px;
+}
