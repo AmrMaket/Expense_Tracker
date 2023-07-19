@@ -14,7 +14,7 @@ $(document).ready(function(){
         $('#expenseList').append(`
             <tr>
                 <td>${expenseName}</td>
-                <td>$${expenseAmount.toFixed(2)}</td>
+                <td>$${expenseAmount.toFixed(3)}</td>
                 <td><button class="deleteExpense">Delete</button></td>
             </tr>
         `);
@@ -27,7 +27,7 @@ $(document).ready(function(){
     }
 
     function updateTotalExpense(){
-        $('#totalExpense').text(`Total Expense: $${totalExpense.toFixed(2)}`);
+        $('#totalExpense').text(`Total Expense: $${totalExpense.toFixed(4)}`);
     }
 
     $('#addExpense').on('click' , addExpense)
